@@ -20,6 +20,9 @@ docker stop open-webui && docker rm open-webui
 
 docker run -d -p 9000:8080 -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://host.docker.internal:11434 --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 
+#打开网站
+http://localhost:9000/
+
 ![img_2.png](img_2.png)
 
 ![img_3.png](img_3.png)
